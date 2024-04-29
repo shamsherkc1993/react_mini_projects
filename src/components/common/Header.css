@@ -1,0 +1,38 @@
+.navbar{
+    background-color: #da0909;
+}
+
+.navbar ul{
+    margin-left: 100px;
+}
+
+.navbar ul li a{
+    padding: 10px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.navbar ul li a:hover,
+.navbar ul li a:hover{
+    color : #319fffdb;
+    transition: 0.5s;
+}
+
+.container-fluid .e {
+    color: #319fffdb;
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+.container-fluid .commerce {
+   text-decoration: none;
+   padding: 0px 0 0 10px;
+   color: #fff;
+
+}
+.container-fluid a {
+    text-decoration: none;
+ 
+ }
