@@ -24,8 +24,8 @@ import bannerImage from './slider/images/banner3.jpg';
         id : 2,
         imageUrl : image2,
         itemName: "Dell5533",
-        sliderDescription : "Dell sells personal computers (PCs), servers, data",
-        description : "The Laptop has 2 Slots to install memory, already with 4GB standard memory installed. For best Inspiron 15 3000 (DDR4) Laptop performance use the maximum amount of 16GB, fill all the slots with the max allowed memory per slot for your Laptop."
+        sliderDescription : "Dell support page, type in your(PCs), Dell support page, type in your",
+        description : "The LDell support page, type in your, already with 4GB standard memory installed. For best Inspiron 15 3000 (DDR4) Laptop performance use the maximum amount of 16GB, fill all the slots with the max allowed memory per slot for your Laptop."
 
     },
 
@@ -33,7 +33,7 @@ import bannerImage from './slider/images/banner3.jpg';
         id : 3,
         imageUrl : image3,
         itemName: "Inspiron",
-        sliderDescription : "Dell sells personal computers (PCs), servers, data",
+        sliderDescription : "Dell support page, type in your servers, data",
         description : " Dell support page, type in your service tag number, and in documentation the specs for your system can be displayed stating memory specs. Or go to Crucial and type in your model number and the specs for compatible memory will be displayed. Crucial also has a small app that you can install which will tell you how many SODIMM slots you have and what RAM is populated"
 
     },
@@ -52,7 +52,7 @@ import bannerImage from './slider/images/banner3.jpg';
         id : 5,
         imageUrl : image5,
         itemName: "Dell789",
-        sliderDescription : "Dell sells personal computers (PCs), servers, data",
+        sliderDescription : "personal computers (PCs), servers, data",
         description : "Removed the 8gb chips, re-installed the 4gb, booted right up. Re-installed 8gb x2 chips, yellow light flashing. Called PNC tech support. They said the chips I have are correct. "
 
     },
@@ -61,7 +61,7 @@ import bannerImage from './slider/images/banner3.jpg';
         id : 6,
         imageUrl : image6,
         itemName: "Dell786787",
-        sliderDescription : "Dell sells personal computers (PCs), servers, data",
+        sliderDescription : "Hp has major servers, data",
         description : "With tech support, installed both chips, yellow light, one 8gb and one 4gb, yellow light. Only when I removed the chip from bank two, and left the only 8gb in slot one did the computer boot back up properly. "
 
     },
@@ -70,7 +70,7 @@ import bannerImage from './slider/images/banner3.jpg';
         id : 7,
         imageUrl : image7,
         itemName: "Dell78976",
-        sliderDescription : "Dell sells personal computers (PCs), servers, data",
+        sliderDescription : "Apple sold personal computer, data",
         description : "Is there something in the bios or a dip switch on the MB that needs to be configured to recognize slot two? The PNC tech said Dell may have configured my model to only run on one active RAM slot even though Dell shows two slot up to 16gb per slot. Any help to get both ram slots to work?"
 
     },
@@ -79,18 +79,11 @@ import bannerImage from './slider/images/banner3.jpg';
         id : 8,
         imageUrl : image8,
         itemName: "Lenevo678",
-        sliderDescription : "Dell sells personal computers (PCs), servers, data",
-        description : "I contacted PNY tech support. They technician advised that I had the correct chips, DDR4, 8GB, 2400MHz & 2133MHz, PC4-19200 for my computer. Tried troubleshooting, with only one chip in slot one would work. "
-
-    },
-    {
-        id : 9,
-        imageUrl : bannerImage,
-        itemName: "Lenevo678",
-        sliderDescription : "Dell sells personal computers (PCs), servers, data",
+        sliderDescription : "Lenovo sells personal computers, servers, data",
         description : "I contacted PNY tech support. They technician advised that I had the correct chips, DDR4, 8GB, 2400MHz & 2133MHz, PC4-19200 for my computer. Tried troubleshooting, with only one chip in slot one would work. "
 
     }
+    
 ];
 
 

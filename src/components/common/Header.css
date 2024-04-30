@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #da0909;
+    background-color: hsl(213, 96%, 19%);
 }
 
 .navbar ul{
@@ -12,18 +12,20 @@
     text-decoration: none;
     font-weight: bold;
     transition: 0.5s;
+    font-size: 20px;
 }
 .navbar ul li a:hover,
 .navbar ul li a:hover{
-    color : #319fffdb;
+    color : #00ffed;
     transition: 0.5s;
 }
 
 .container-fluid .e {
-    color: #319fffdb;
+    color: #00ffed;
     font-size: 40px;
     font-weight: bolder;
     text-decoration: none;
+    margin-left: 20px;
 
 }
 .container-fluid .commerce {
@@ -35,4 +37,23 @@
 .container-fluid a {
     text-decoration: none;
  
+ }
+
+ 
+
+ .socialmedia-list{
+    margin-right: 20px;;
+ }
+
+ .fa-twitter, .fa-facebook, .fa-instagram, .fa-whatsapp{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    margin: 0 20px 0 5px;
+  transition: 0.5s;
+ }
+
+ .fa-twitter:hover, .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover{
+  color: #00ffed;
+  transition: 0.5s;
  }

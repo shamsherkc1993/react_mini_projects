@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import './HomeSlider.css'
 import itemDetails from "../ItemDetails";
 
+
 const HomeSlider = () => {
   const settings = {
     dots: true,
@@ -25,7 +26,7 @@ const HomeSlider = () => {
                 return (
                 <div className="slider-div">
                   <img src={newDetail.imageUrl} className="img-fluid"></img>
-                  <p>{newDetail.description}</p>
+                  <p>{newDetail.sliderDescription}</p>
                 </div>);  
               })
             }

@@ -1,0 +1,42 @@
+.about img{
+    height: 300px;
+}
+
+.abt-col8{
+    margin: 40px;
+}
+
+.abt-row {
+    background-color: #d7d4ed57
+}
+.abt-row h1 {
+    font-size: 40px;
+    color: #012c5f;
+    font-weight: 900;
+}
+.abt-row h4{
+    font-size: 20px;
+    color: #012c5f;
+    font-weight: 900;
+    margin: 40px;
+
+}
+
+.about-side-title-link {
+    background-color: #012c5f;
+    margin-bottom: 40px;
+}
+.about-side-title-link ul li{
+    text-decoration: none;
+    list-style: none;
+
+    
+}
+.about-side-title-link ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.about-side-title-link ul li a:hover,
+.about-side-title-link ul li a:focus{
+    color: #00ffed;
+}

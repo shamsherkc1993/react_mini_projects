@@ -9,7 +9,7 @@ const BuyItemList = () => {
     <section className='buy-item-section'>
         <div className='container'>
             <div className='row'>
-             <h3>Latest Products</h3>
+             <h1>Latest <span className='product'>Products</span></h1>
                     {
                         itemDetails.map((buyItem) => {
                             return (
@@ -19,7 +19,7 @@ const BuyItemList = () => {
                                         <div class="card-body">
                                             <h4 class="card-title">{buyItem.itemName}</h4>
                                             <p class="card-text">{buyItem.description} ...</p>
-                                            <NavLink to="/singleproduct/id" element={<SinglePage />} className="btn btn-primary">View Detail</NavLink>
+                                            <NavLink to="/singleproduct/id" element={<SinglePage />} className=" viewmorebtn">View Detail</NavLink>
                                         </div>
                                     </div>
                                  </div>
