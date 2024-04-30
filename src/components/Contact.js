@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react';
 import Header from './common/Header';
 import Footer from './common/Footer';
 import './Contact.css';
@@ -7,6 +7,27 @@ import itemDetails from './ItemDetails';
 import { NavLink } from 'react-router-dom';
 
 const Contact = () => {
+    const [fname, setFname] = useState("");
+    const [lname, setLname] = useState("");
+    const [email, setEmail] = useState("");
+    const [comment, setComment] = useState("");
+    const [allEntry, setAllEntry] =useState([]);
+
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+        const newEntry = {
+            firstName : fname,
+            lastname : lname,
+            email : email,
+            comment : comment
+        }
+
+        setAllEntry([...allEntry, newEntry])
+        console.log(allEntry)
+    }
+    console.log(fname)
+
   return (
     <div>
         <Header />
@@ -17,21 +38,37 @@ const Contact = () => {
           <div className='col-sm-7 abt-col8'>
             <h1>Contact us</h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7607.590082060718!2d139.62321109337853!3d35.621607387487124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f473c8e4b471%3A0x89a3b29e18db47b2!2sY%C5%8Dga%20Sta.!5e0!3m2!1sen!2sjp!4v1714479768154!5m2!1sen!2sjp"/>
-            <form action="/action_page.php">
+            <form action="" onSubmit={submitHandler}>
                 <div class="mb-3 mt-3">
-                    <input type="text" class="form-control" placeholder="First name" />
+                    <input type="text" class="form-control" placeholder="First name" onChange={(e)=>setFname(e.target.value)}/>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Last Name" />
+                    <input type="text" class="form-control" placeholder="Last Name" onChange={(e)=>setLname(e.target.value)}/>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Email" />
+                    <input type="email" class="form-control" placeholder="Email" onChange={(e)=>setEmail(e.target.value)}/>
                 </div>
                 <div className="mb-3">
-                    <textarea class="form-control" rows="5" placeholder="comment" name="text" />
+                    <textarea class="form-control" rows="5" placeholder="comment" name="text" onChange={(e)=>setComment(e.target.value)}/>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+                <div><br/>
+                            {
+                                allEntry.map((curElement) => {
+                                    return (
+                                         <div> 
+                                             <h4>Submitted Details</h4>
+                                            <p>First Name : {curElement.firstName}</p>
+                                            <p>Last Name :{curElement.lastname}</p>
+                                            <p> Email : {curElement.email}</p>
+                                            <p>Comment : {curElement.comment}</p>
+                                         </div>
+
+                                    )
+                                })
+                            }
+                        </div>
           </div>
           <div className='col-sm-4 about-side-title-link'>
             <h4>Latest Products</h4>
