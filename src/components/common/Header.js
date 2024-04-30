@@ -9,6 +9,7 @@ import About from '../About';
 import Product from '../Product';
 
 import jsonDetail from '../FakeJson';
+import Contact from '../Contact';
 
 const Header = () => {
   return (
@@ -29,6 +30,9 @@ const Header = () => {
                 </li>
                 <li class="nav-item">
                 <NavLink to="/products" class="nav-link" element={<Product />}>Products</NavLink>
+                </li>
+                <li class="nav-item">
+                <NavLink to="/contact" class="nav-link" element={<Contact />}>Contact</NavLink>
                 </li>
                 <li class="nav-item">
                 <NavLink to={`/singleproduct/${jsonDetail.id}`} element={<SinglePage />}></NavLink>
