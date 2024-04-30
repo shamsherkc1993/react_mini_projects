@@ -58,9 +58,10 @@ const Product = () => {
             return key.rating.rate < 4
         })
         setAllDetails(lessThanFourStar);
-
-        
     }
+
+    const [search, setSearch] = useState('');
+    console.log(search)
 
   return (
     <div>
@@ -72,8 +73,7 @@ const Product = () => {
                 {/* <button type="submit" class="btn btn-primary" onClick={greaterHandler}>100 above</button> */}
                  <div className='sideProductList'>
                   <h2>Filter by Price</h2><br />
-
-                
+                    <input type="text" class="form-control"  placeholder="Search" onChange={(e) =>setSearch(e.target.value)}/> <br/>
                          <div class="form-check">
                             <input type="checkbox" class="form-check-input" onClick={viewAll}/>
                             <label class="form-check-label" for="check2">All Items</label>
@@ -118,7 +118,10 @@ const Product = () => {
                     <div className='row'>
                     {/* <img src={jsonDetail[1].image} className='img-banner'/> */}
                     {
-                        allDetails.map((dataFetch) => {
+                        allDetails.filter((item) => {
+                            return search.toLowerCase() === '' ? item : item.title.toLowerCase().includes(search)
+                        })
+                        .map((dataFetch) => {
                             return (
                                 <div className='col-sm-4'>
                                 <div class="card">
