@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
+import Product from '../Product';
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
                 <NavLink to="/about" class="nav-link">About</NavLink>
                 </li>
                 <li class="nav-item">
-                <NavLink to="/singleproduct/id" class="nav-link">Products</NavLink>
+                <NavLink to="/products" class="nav-link">Products</NavLink>
                 </li>
             </ul>
             <form class="d-flex">

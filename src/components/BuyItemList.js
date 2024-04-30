@@ -1,9 +1,8 @@
 import React from 'react';
 import './BuyitemList.css';
-import itemDetails from './slider/ItemDetails';
+import itemDetails from './ItemDetails';
 import { NavLink } from 'react-router-dom';
-import SinglePage from './SinglePage';
-console.log(itemDetails)
+import SinglePage from './single/SinglePage';
 
 const BuyItemList = () => {
   return (

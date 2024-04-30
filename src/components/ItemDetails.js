@@ -1,13 +1,16 @@
-import image1 from './images/1.jpg'
-import image2 from './images/2.jpg';
-import image3 from './images/3.jpg';
-import image4 from './images/4.jpg';
-import image5 from './images/5.jpg';
-import image6 from './images/6.jpg';
-import image7 from './images/7.jpg';
-import image8 from './images/8.jpg';
+import image1 from './slider/images/1.jpg'
+import image2 from './slider/images/2.jpg';
+import image3 from './slider/images/3.jpg';
+import image4 from './slider/images/4.jpg';
+import image5 from './slider/images/5.jpg';
+import image6 from './slider/images/6.jpg';
+import image7 from './slider/images/7.jpg';
+import image8 from './slider/images/8.jpg';
+import bannerImage from './slider/images/banner3.jpg';
 
-const itemDetails = [
+
+
+ const itemDetails = [
     {
 
         id : 1,
@@ -79,7 +82,16 @@ const itemDetails = [
         sliderDescription : "Dell sells personal computers (PCs), servers, data",
         description : "I contacted PNY tech support. They technician advised that I had the correct chips, DDR4, 8GB, 2400MHz & 2133MHz, PC4-19200 for my computer. Tried troubleshooting, with only one chip in slot one would work. "
 
+    },
+    {
+        id : 9,
+        imageUrl : bannerImage,
+        itemName: "Lenevo678",
+        sliderDescription : "Dell sells personal computers (PCs), servers, data",
+        description : "I contacted PNY tech support. They technician advised that I had the correct chips, DDR4, 8GB, 2400MHz & 2133MHz, PC4-19200 for my computer. Tried troubleshooting, with only one chip in slot one would work. "
+
     }
 ];
+
 
 export default itemDetails;

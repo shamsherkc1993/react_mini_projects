@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './HomeSlider.css'
-import itemDetails from "./ItemDetails";
+import itemDetails from "../ItemDetails";
 
 const HomeSlider = () => {
   const settings = {
@@ -25,7 +25,7 @@ const HomeSlider = () => {
                 return (
                 <div className="slider-div">
                   <img src={newDetail.imageUrl} className="img-fluid"></img>
-                  <p>{newDetail.sliderDescription}</p>
+                  <p>{newDetail.description}</p>
                 </div>);  
               })
             }
