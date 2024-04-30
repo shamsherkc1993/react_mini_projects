@@ -3,7 +3,9 @@ import './SinglePage.css';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 
-const SinglePage = () => {
+const SinglePage = (props) => {
+  const res = props;
+  console.log(res)
   
   return (
     <div className='single-page-bg-img'>

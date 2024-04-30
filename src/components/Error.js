@@ -3,7 +3,9 @@ import Header from './common/Header'
 import Footer from './common/Footer'
 
 const Error = (props)=> {
-  console.log(props)
+  const res = props.sendID;
+  console.log(res)
+
   return (
     <div>
         <Header />

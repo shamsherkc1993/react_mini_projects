@@ -126,7 +126,7 @@ const Product = () => {
                                     <div class="card-body">
                                         <h5 class="card-title">{dataFetch.title}</h5>
                                         <p class="card-text">Price : {dataFetch.price} Rating : {dataFetch.rating.rate} </p>
-                                        <NavLink to="/singleproduct/id" element={<SinglePage />} className="btn btn-primary">View Detail</NavLink>
+                                        <NavLink to={`/singleproduct/${dataFetch.id}`} element={<SinglePage />} className="btn btn-primary">View Detail</NavLink>
                                     </div>
                                 </div>
                              </div>

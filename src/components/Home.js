@@ -5,9 +5,10 @@ import BuyItemList from './BuyItemList';
 import Footer from './common/Footer';
 
 function Home() {
+
   return (
     <section>
-        <Header />
+        <Header/>
        <HomeSlider />
        <BuyItemList />
        <Footer />
