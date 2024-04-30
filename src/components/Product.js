@@ -4,6 +4,8 @@ import { useState } from 'react';
 import './Product.css';
 import jsonDetail from './FakeJson';
 import { NavLink } from 'react-router-dom';
+import Footer from './common/Footer';
+import SinglePage from './single/SinglePage';
 
 const Product = () => {
 
@@ -68,7 +70,8 @@ const Product = () => {
                 <div className='col-sm-4'><br />
 
                 {/* <button type="submit" class="btn btn-primary" onClick={greaterHandler}>100 above</button> */}
-                  <h2>FIlter by Price</h2><br />
+                 <div className='sideProductList'>
+                  <h2>Filter by Price</h2><br />
 
                 
                          <div class="form-check">
@@ -92,7 +95,7 @@ const Product = () => {
                             <label class="form-check-label" for="check2">less than 20</label>
                         </div><br />
 
-                  <h2>FIlter by Rating</h2>
+                  <h2>Filter by Rating</h2>
                    
                     <div className='select-bu-check'>
                     <div class="form-check">
@@ -108,6 +111,7 @@ const Product = () => {
                             <label class="form-check-label" for="check2">less than 4 star</label>
                         </div>
                     </div>
+                    </div>
                    
                 </div>
                 <div className='col-sm-8'><br />
@@ -122,7 +126,7 @@ const Product = () => {
                                     <div class="card-body">
                                         <h5 class="card-title">{dataFetch.title}</h5>
                                         <p class="card-text">Price : {dataFetch.price} Rating : {dataFetch.rating.rate} </p>
-                                        <NavLink to="/product" element={<Product />} className="btn btn-primary">View Detail</NavLink>
+                                        <NavLink to="/singleproduct/id" element={<SinglePage />} className="btn btn-primary">View Detail</NavLink>
                                     </div>
                                 </div>
                              </div>
@@ -133,6 +137,7 @@ const Product = () => {
                 </div>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

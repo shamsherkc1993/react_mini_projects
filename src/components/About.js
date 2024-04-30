@@ -5,8 +5,11 @@ import itemDetails from './ItemDetails';
 import './About.css';
 import jsonDetail from './FakeJson';
 import { NavLink } from 'react-router-dom';
+import SinglePage from './single/SinglePage';
+
 
 const About = () => {
+  const sending = jsonDetail.id;
   return (
    <section>
     <Header />
@@ -35,7 +38,7 @@ const About = () => {
                   <div className=''>
                     <ul>
                       <li>
-                        <NavLink to="/singleproduct/id">{latestProduct.title}</NavLink>
+                        <NavLink to = {`/singleproduct/${latestProduct.id}`} element={<SinglePage  sendData={sending}/>}>{latestProduct.title}</NavLink>
                         </li>
                     </ul>
                   </div>

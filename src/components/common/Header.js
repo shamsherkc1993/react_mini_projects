@@ -3,6 +3,9 @@ import './Header.css';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFacebook, faInstagram, faTwitter, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
+import jsonDetail from '../FakeJson';
+import SinglePage from '../single/SinglePage';
+
 
 
 const Header = () => {
@@ -25,6 +28,11 @@ const Header = () => {
                 <li class="nav-item">
                 <NavLink to="/products" class="nav-link">Products</NavLink>
                 </li>
+                <li class="nav-item">
+                <NavLink to={`/singleproduct/${jsonDetail.id}`} element={<SinglePage />}></NavLink>
+                </li>
+
+                
             </ul>
             <div class="d-flex socialmedia-list">
               <NavLink><span className='instagram'><FontAwesomeIcon icon={faInstagram} /></span></NavLink>

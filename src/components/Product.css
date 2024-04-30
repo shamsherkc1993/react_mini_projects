@@ -6,3 +6,12 @@
     height: 200px;
     margin: 20px 0;
 }
+.sideProductList {
+    background-color: #dcebff;
+    color: #012c5f;
+    padding: 20px;
+}
+.sideProductList  h2{
+    color: #012c5f;
+    font-weight: 900;
+}

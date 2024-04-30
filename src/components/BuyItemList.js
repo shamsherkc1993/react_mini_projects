@@ -19,7 +19,7 @@ const BuyItemList = () => {
                                         <div class="card-body">
                                             <h4 class="card-title">{buyItem.itemName}</h4>
                                             <p class="card-text">{buyItem.description} ...</p>
-                                            <NavLink to="/singleproduct/id" element={<SinglePage />} className=" viewmorebtn">View Detail</NavLink>
+                                            <NavLink to="/singleproduct/id" element={<SinglePage />} className="viewmorebtn">View Detail</NavLink>
                                         </div>
                                     </div>
                                  </div>
