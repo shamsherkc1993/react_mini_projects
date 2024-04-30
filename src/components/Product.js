@@ -10,6 +10,8 @@ import SinglePage from './single/SinglePage';
 const Product = () => {
 
     const [allDetails, setAllDetails] = useState(jsonDetail);
+    const [search, setSearch] = useState('');
+
 
     const greaterHandler = () => {
         const pricefreaterThan100FilteredData = jsonDetail.filter((key) => {
@@ -60,8 +62,10 @@ const Product = () => {
         setAllDetails(lessThanFourStar);
     }
 
-    const [search, setSearch] = useState('');
-    console.log(search)
+    // const changehandler = (e) => {
+    //     setSearch(e.target.value)
+    // }
+
 
   return (
     <div>
@@ -71,9 +75,11 @@ const Product = () => {
                 <div className='col-sm-4'><br />
 
                 {/* <button type="submit" class="btn btn-primary" onClick={greaterHandler}>100 above</button> */}
+
                  <div className='sideProductList'>
-                  <h2>Filter by Price</h2><br />
-                    <input type="text" class="form-control"  placeholder="Search" onChange={(e) =>setSearch(e.target.value)}/> <br/>
+                    <h2>Filter by Item Name</h2><br />
+                    <input type="text" class="form-control"  placeholder="Search" onChange={(e)=>setSearch(e.target.value)}/> <br/>
+                    <h2>Filter by Price</h2><br />
                          <div class="form-check">
                             <input type="checkbox" class="form-check-input" onClick={viewAll}/>
                             <label class="form-check-label" for="check2">All Items</label>
