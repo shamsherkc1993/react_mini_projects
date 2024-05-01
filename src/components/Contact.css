@@ -1,4 +1,22 @@
-iframe{
-    height: 30% !important;
-    width: 100% !important;
+iframe {
+  height: 30% !important;
+  width: 100% !important;
+}
+
+.contact-btn {
+  background-color: #012c5f;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: none;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: #00ffed;
+  color: #012c5f;
+  transition: 0.5s;
+  border: none;
 }

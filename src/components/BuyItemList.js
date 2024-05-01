@@ -18,8 +18,8 @@ const BuyItemList = () => {
                                         <img class="card-img-top" src={buyItem.imageUrl}alt="product1-image"/>
                                         <div class="card-body">
                                             <h4 class="card-title">{buyItem.itemName}</h4>
-                                            <p class="card-text">{buyItem.description} ...</p>
-                                            <NavLink to="/singleproduct/id" element={<SinglePage />} className="viewmorebtn">View Detail</NavLink>
+                                            <p class="card-text" style={{padding: "10px"}}>{buyItem.description.substring(0, 200)} ...</p>
+                                            <NavLink to="/singleproduct/id" element={<SinglePage />} className="viewmorebtn">Buy Now</NavLink>
                                         </div>
                                     </div>
                                  </div>

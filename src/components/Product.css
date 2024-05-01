@@ -1,17 +1,42 @@
-.select-bu-check{
-    padding: 30px 0;
+.select-bu-check {
+  padding: 30px 0;
 }
 .img-banner {
-    width: 100%;
-    height: 200px;
-    margin: 20px 0;
+  width: 100%;
+  height: 200px;
+  margin: 20px 0;
 }
 .sideProductList {
-    background-color: #dcebff;
-    color: #012c5f;
-    padding: 20px;
+  background-color: #dcebff;
+  color: #012c5f;
+  padding: 20px;
 }
-.sideProductList  h2{
-    color: #012c5f;
-    font-weight: 900;
+.sideProductList h2 {
+  color: #012c5f;
+  font-weight: 900;
+}
+
+.pricespan {
+  color: #e4554f;
+  font-size: 20px;
+}
+.card-title {
+  font-weight: 700 !important;
+}
+
+.product-btn {
+  background-color: #012c5f;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: none;
+}
+.product-btn:hover,
+.product-btn:focus {
+  background-color: #00ffed;
+  color: #012c5f;
+  transition: 0.5s;
+  border: none;
 }
