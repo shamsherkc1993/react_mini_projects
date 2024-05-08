@@ -6,3 +6,26 @@
     background-size: 100% 100%;
     
 } */
+
+
+.singleimage img {
+    height: 400px;
+    width: 400px;
+}
+
+.dtail-8{
+    background-color: #dcebff;
+    padding: 20px !important;
+}
+.dtail-8 h4{
+    font-size: 50px;
+    font-weight: 900;
+    color: #012c5f;
+    margin-bottom: 50px;
+}
+
+.all-span {
+    color: #012c5f;
+    font-size: 20px;
+    font-weight: 700;
+}

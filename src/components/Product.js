@@ -3,7 +3,7 @@ import Header from "./common/Header";
 import { useState } from "react";
 import "./Product.css";
 import jsonDetail from "./FakeJson";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Footer from "./common/Footer";
 import SinglePage from "./single/SinglePage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -202,13 +202,13 @@ const Product = () => {
                             {dataFetch.rating && dataFetch.rating.rate}
                             <FontAwesomeIcon icon={faStar} />{" "}
                           </p>
-                          <NavLink
+                          <Link
                             to={`/singleproduct/${dataFetch.id}`}
                             element={<SinglePage />}
                             className="product-btn"
                           >
                             View Detail
-                          </NavLink>
+                          </Link>
                         </div>
                       </div>
                     </div>

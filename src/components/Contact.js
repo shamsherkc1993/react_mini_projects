@@ -21,6 +21,11 @@ const Contact = () => {
       email: email,
       comment: comment,
     };
+    setFname('');
+    setLname('');
+    setEmail('');
+    setComment('');
+
 
     setAllEntry([...allEntry, newEntry]);
     console.log(allEntry);
@@ -43,6 +48,7 @@ const Contact = () => {
                     type="text"
                     class="form-control"
                     placeholder="First name"
+                    value={fname}
                     onChange={(e) => setFname(e.target.value)}
                   />
                 </div>
@@ -50,6 +56,7 @@ const Contact = () => {
                   <input
                     type="text"
                     class="form-control"
+                    value={lname}
                     placeholder="Last Name"
                     onChange={(e) => setLname(e.target.value)}
                   />
@@ -58,6 +65,7 @@ const Contact = () => {
                   <input
                     type="email"
                     class="form-control"
+                    value={email}
                     placeholder="Email"
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -67,6 +75,7 @@ const Contact = () => {
                     class="form-control"
                     rows="5"
                     placeholder="comment"
+                    value={comment}
                     name="text"
                     onChange={(e) => setComment(e.target.value)}
                   />
