@@ -7,6 +7,8 @@ import SinglePage from "./components/single/SinglePage";
 import Product from "./components/Product";
 import Contact from "./components/Contact";
 import HomeSingle from "./components/single/HomeSingle";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 function App() {
   return (

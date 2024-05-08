@@ -57,7 +57,7 @@ const About = () => {
                     <ul>
                       <li>
                         <NavLink to={`/singleproduct/${latestProduct.id}`}>
-                          {latestProduct.title}
+                          {`- ${latestProduct.title}`}
                         </NavLink>
                       </li>
                     </ul>
