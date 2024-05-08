@@ -88,9 +88,10 @@ const Contact = () => {
                 <br />
                 {allEntry.map((curElement) => {
                   return (
-                    <div>
+                    <div> 
                       <h4>Submitted Details</h4>
-                      <p>First Name : {curElement.firstName}</p>
+                      <p></p>
+                      <p> First Name : {curElement.firstName}</p>
                       <p>Last Name :{curElement.lastname}</p>
                       <p> Email : {curElement.email}</p>
                       <p>Comment : {curElement.comment}</p>

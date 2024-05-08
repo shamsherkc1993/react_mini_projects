@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SinglePage from "./components/single/SinglePage";
 import Product from "./components/Product";
 import Contact from "./components/Contact";
+import HomeSingle from "./components/single/HomeSingle";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         <Route path="/products" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/singleproduct/:id" element={<SinglePage />} />
+        <Route
+          path="/homesingleproduct/:homeproductid"
+          element={<HomeSingle />}
+        />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

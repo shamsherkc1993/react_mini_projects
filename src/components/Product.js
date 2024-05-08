@@ -1,60 +1,60 @@
-import React from "react";
-import Header from "./common/Header";
-import { useState } from "react";
-import "./Product.css";
-import jsonDetail from "./FakeJson";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import Footer from "./common/Footer";
-import SinglePage from "./single/SinglePage";
+import { AllFakeData } from "../index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
+import "./Product.css";
+import Header from "./common/Header";
+import Footer from "./common/Footer";
+import SinglePage from "./single/SinglePage";
 
 const Product = () => {
-  const [allDetails, setAllDetails] = useState(jsonDetail);
+  const allData = useContext(AllFakeData);
+  const [allDetails, setAllDetails] = useState(allData);
   const [search, setSearch] = useState("");
 
   const greaterHandler = () => {
-    const pricefreaterThan100FilteredData = jsonDetail.filter((key) => {
+    const pricefreaterThan100FilteredData = allData.filter((key) => {
       return key.price > 100;
     });
     setAllDetails(pricefreaterThan100FilteredData);
   };
 
   const lessThan80Handler = () => {
-    const priceLessThan80FilteredData = jsonDetail.filter((key) => {
+    const priceLessThan80FilteredData = allData.filter((key) => {
       return key.price < 80;
     });
     setAllDetails(priceLessThan80FilteredData);
   };
 
   const lessThan40Handler = () => {
-    const priceLessThan40FilteredData = jsonDetail.filter((key) => {
+    const priceLessThan40FilteredData = allData.filter((key) => {
       return key.price < 40;
     });
     setAllDetails(priceLessThan40FilteredData);
   };
 
   const lessThan20Handler = () => {
-    const priceLessThan20FilteredData = jsonDetail.filter((key) => {
+    const priceLessThan20FilteredData = allData.filter((key) => {
       return key.price < 20;
     });
     setAllDetails(priceLessThan20FilteredData);
   };
 
   const viewAll = () => {
-    const viewallData = jsonDetail;
+    const viewallData = allData;
     setAllDetails(viewallData);
   };
 
   const moreThanOrEqualFourStar = () => {
-    const moreEqualFour = jsonDetail.filter((key) => {
+    const moreEqualFour = allData.filter((key) => {
       return key.rating.rate > 4;
     });
     setAllDetails(moreEqualFour);
   };
 
   const lessThanFourStar = () => {
-    const lessThanFourStar = jsonDetail.filter((key) => {
+    const lessThanFourStar = allData.filter((key) => {
       return key.rating.rate < 4;
     });
     setAllDetails(lessThanFourStar);

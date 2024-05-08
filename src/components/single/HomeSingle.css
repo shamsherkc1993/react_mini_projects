@@ -1,0 +1,36 @@
+.maincontainerhomeprodict {
+  background-color: #dcebff;
+  padding: 8rem 0;
+  padding: 8rem 2rem !important;
+}
+
+.home-product-row img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.container {
+  padding: 10px;
+}
+
+.home-product-row h4 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #012c5f;
+  margin: 20px;
+}
+.home-product-row p {
+  margin: 20px;
+}
+
+.home-prd-span {
+  font-size: 20px;
+  color: #012c5f;
+  font-weight: 500;
+}
+
+svg {
+  color: #03ffed;
+  font-size: 20px;
+}

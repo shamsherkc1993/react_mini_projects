@@ -7,25 +7,23 @@
     
 } */
 
-
+.singleimage {
+  background-color: #dcebff;
+}
 .singleimage img {
-    height: 400px;
-    width: 400px;
+  width: 30rem;
+  height: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.dtail-8{
-    background-color: #dcebff;
-    padding: 20px !important;
-}
-.dtail-8 h4{
-    font-size: 50px;
-    font-weight: 900;
-    color: #012c5f;
-    margin-bottom: 50px;
+.dtail-8 h4 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #012c5f;
 }
 
 .all-span {
-    color: #012c5f;
-    font-size: 20px;
-    font-weight: 700;
+  color: #012c5f;
+  font-size: 20px;
+  font-weight: 700;
 }
