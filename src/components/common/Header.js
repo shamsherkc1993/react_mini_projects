@@ -1,22 +1,27 @@
 import React from 'react';
 import './Header.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFacebook, faInstagram, faTwitter, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import SinglePage from '../single/SinglePage';
 import Home from '../Home';
 import About from '../About';
 import Product from '../Product';
-
 import jsonDetail from '../FakeJson';
 import Contact from '../Contact';
+import logo from '../slider/images/logo.png'
 
 const Header = () => {
   return (
     <section>
+          <div className='container-fluid top-head'>
+              <p>call us: <Link to ='phone' >+080-8765-8765</Link></p>
+          </div>
         <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
-            <NavLink to="/" class="navbar-brand"><span className='e'>E-COMMERCE</span></NavLink>
+            <NavLink to="/" class="navbar-brand">
+               <img src={logo} alt='logo-image' className='logos'/>
+            </NavLink>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
             </button>
